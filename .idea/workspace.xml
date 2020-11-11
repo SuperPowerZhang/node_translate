@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b53774c9-1f9a-4ed1-b341-6a7fc74dcf22" name="Default Changelist" comment="" />
+    <list default="true" id="b53774c9-1f9a-4ed1-b341-6a7fc74dcf22" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/md5/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/md5/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/md5/md5.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/md5/md5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cli.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/cli.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +32,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -45,7 +58,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605009972013</updated>
-      <workItem from="1605009974536" duration="416000" />
+      <workItem from="1605009974536" duration="3566000" />
+      <workItem from="1605054569471" duration="3212000" />
+      <workItem from="1605114075800" duration="2181000" />
     </task>
     <servers />
   </component>
@@ -55,13 +70,22 @@
       <list>
         <option value="$PROJECT_DIR$/src/cli.js" />
         <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/test.js" />
       </list>
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="1176" y="279" key="SettingsEditor" timestamp="1605010183178">
+    <state x="1176" y="279" key="SettingsEditor" timestamp="1605011178132">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="1176" y="279" key="SettingsEditor/0.0.2560.1410@0.0.2560.1410" timestamp="1605010183178" />
+    <state x="1176" y="279" key="SettingsEditor/0.0.2560.1410@0.0.2560.1410" timestamp="1605011178132" />
+    <state x="1041" y="295" width="647" height="801" key="find.popup" timestamp="1605115978835">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1041" y="295" width="647" height="801" key="find.popup/0.0.2560.1410@0.0.2560.1410" timestamp="1605115978835" />
+    <state x="1586" y="329" width="672" height="678" key="search.everywhere.popup" timestamp="1605011111230">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1586" y="329" width="672" height="678" key="search.everywhere.popup/0.0.2560.1410@0.0.2560.1410" timestamp="1605011111230" />
   </component>
 </project>

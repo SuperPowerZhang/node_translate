@@ -1,9 +1,11 @@
-import { privateKey, appid } from "./private";
+// @ts-ignore
+import { privateKey, appid } from "private.js"
 import * as https from "https";
 import * as querystring from "querystring";
 import md5 = require("md5");
 
 export const translate = (word: string) => {
+  console.log('1111111')
   let q = word;
   let from = "en";
   let to = "zh";

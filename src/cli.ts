@@ -9,6 +9,7 @@ program
   .usage("<English>")
   .arguments("<English>")
   .action(function (english) {
+      console.log(translate);
     translate(english);
   });
 
