@@ -1,15 +1,15 @@
 {
-  "name": "translate",
-  "version": "0.0.1",
-  "main": "dist/main.ts",
+  "name": "sp-translate",
+  "version": "0.0.3",
+  "main": "dist/main.js",
   "bin": {
-    "fy": "dist/cli.ts"
+    "fy": "dist/cli.js"
   },
   "scripts": {
     "start": "ts-node-dev src/cli.ts"
   },
   "files": [
-    "dist/*.js"
+    "dist/**/*.js"
   ],
   "author": "SuperPowerZhang <2285546178@qq.com>",
   "license": "MIT",
