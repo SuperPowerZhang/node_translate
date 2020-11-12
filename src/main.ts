@@ -1,15 +1,31 @@
-// @ts-ignore
-import { privateKey, appid } from "private.js"
+import {appid,privateKey} from "./private";
 import * as https from "https";
 import * as querystring from "querystring";
 import md5 = require("md5");
 
+type ErrorMap = {
+  [k: string]: string;
+};
+const errorMap: ErrorMap = {
+  "52001": "请求超时",
+  "52002": "系统错误",
+  "52003": "管理员登录失败，喊ta登一下叭",
+  "54000": "必填参数为空",
+  "54001": "签名错误",
+  "54003": "访问频率受限",
+  "54004": "账户余额不足",
+  "54005": "长query请求频繁	",
+  "58000": "客户端IP非法",
+  "58001": "译文语言方向不支持",
+  "58002": "服务当前已关闭",
+  "90107": "认证未通过或未生效",
+};
+
 export const translate = (word: string) => {
-  console.log('1111111')
   let q = word;
   let from = "en";
   let to = "zh";
-  if (!/[a - zA - Z]/.test(word)) {
+  if (/[a-zA-Z]/.test(word[0])===false){
     from = "zh";
     to = "en";
   }
@@ -24,7 +40,6 @@ export const translate = (word: string) => {
     salt,
     sign,
   };
-
   const query: String = querystring.stringify(queryOptions);
   const options = {
     hostname: "api.fanyi.baidu.com",
@@ -32,26 +47,9 @@ export const translate = (word: string) => {
     path: "/api/trans/vip/translate?" + query,
     method: "GET",
   };
-  type ErrorMap = {
-    [k: string]: string;
-  };
-  const errorMap: ErrorMap = {
-    "52001": "请求超时",
-    "52002": "系统错误",
-    "52003": "管理员登录失败，喊ta登一下叭",
-    "54000": "必填参数为空",
-    "54001": "签名错误",
-    "54003": "访问频率受限",
-    "54004": "账户余额不足",
-    "54005": "长query请求频繁	",
-    "58000": "客户端IP非法",
-    "58001": "译文语言方向不支持",
-    "58002": "服务当前已关闭",
-    "90107": "认证未通过或未生效",
-  };
+
   const req = https.request(options, (res) => {
     let chunks: Buffer[] = [];
-
     type baiduResult = {
       from: string;
       to: string;
@@ -68,9 +66,7 @@ export const translate = (word: string) => {
       if (object.error_code) {
         console.error(errorMap[object.error_code] || object.error_message);
       } else {
-        object.trans_result.map((item) => {
-          console.log(item["dst"]);
-        });
+          console.log(object.trans_result[0].dst);
       }
     });
   });

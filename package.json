@@ -1,9 +1,9 @@
 {
   "name": "translate",
   "version": "0.0.1",
-  "main": "dist/main.js",
+  "main": "dist/main.ts",
   "bin": {
-    "fy": "dist/cli.js"
+    "fy": "dist/cli.ts"
   },
   "scripts": {
     "start": "ts-node-dev src/cli.ts"
@@ -14,7 +14,7 @@
   "author": "SuperPowerZhang <2285546178@qq.com>",
   "license": "MIT",
   "dependencies": {
-    "@types/node": "^14.14.6",
+    "@types/node": "^14.14.7",
     "commander": "^6.2.0",
     "https": "^1.0.0",
     "md5": "^2.3.0",
